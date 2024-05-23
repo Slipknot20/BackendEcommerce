@@ -3,7 +3,7 @@ spring:
     name: ms-commerce
 
   datasource:
-    url: jdbc:mysql://root:RoMBBzsMYCGVecgwguuzMAfkjAIGGJwW@roundhouse.proxy.rlwy.net:53234/railway
+    url: jdbc:mysql://${RAILWAY_TCP_PROXY_DOMAIN}:${RAILWAY_TCP_PROXY_PORT}/${MYSQL_DATABASE}
     username: root
     password: RoMBBzsMYCGVecgwguuzMAfkjAIGGJwW
     driver-class-name: com.mysql.cj.jdbc.Driver
