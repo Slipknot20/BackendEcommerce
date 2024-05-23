@@ -32,6 +32,11 @@ eureka:
       defaultZone: http://${EUREKA_SERVER_DOMAIN}/eureka/
     fetch-registry: true
     register-with-eureka: true
-
+    
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: DEBUG
+    com.netflix.eureka: DEBUG
 
       #RAILWAY_PUBLIC_DOMAIN #http://localhost:8761/eureka
