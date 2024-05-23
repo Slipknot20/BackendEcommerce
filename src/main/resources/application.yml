@@ -3,9 +3,9 @@ spring:
     name: ms-commerce
 
   datasource:
-    url: jdbc:mysql://databasevino.c3c0ygekuve5.us-east-1.rds.amazonaws.com:3306/DataBase_Vino_Vivo
+    url: jdbc:mysql://root:RoMBBzsMYCGVecgwguuzMAfkjAIGGJwW@roundhouse.proxy.rlwy.net:53234/railway
     username: root
-    password: V1n0V1v0.24
+    password: RoMBBzsMYCGVecgwguuzMAfkjAIGGJwW
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
