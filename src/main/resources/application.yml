@@ -20,16 +20,18 @@ spring:
     open-in-view: false
 
 server:
-  port: 8761
+  port: ${PORT}
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${EUREKA_SERVER_DOMAIN:localhost}
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://${EUREKA_SERVER_DOMAIN}/eureka/
-
+    fetch-registry: true
+    register-with-eureka: true
 
 
       #RAILWAY_PUBLIC_DOMAIN #http://localhost:8761/eureka
