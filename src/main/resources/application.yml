@@ -24,12 +24,12 @@ server:
 
 eureka:
   instance:
-    hostname: http://${EUREKA_SERVER_DOMAIN}
+    hostname: ${EUREKA_SERVER_DOMAIN}
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://${EUREKA_SERVER_DOMAIN}/eureka/
+      defaultZone: http://${EUREKA_SERVER_DOMAIN}:8761/eureka
     fetch-registry: true
     register-with-eureka: true
     
