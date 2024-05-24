@@ -29,7 +29,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://${EUREKA_SERVER_DOMAIN}:${PORT_EUREKA}/eureka
+      defaultZone: http://${EUREKA_SERVER_DOMAIN}
     fetch-registry: true
     register-with-eureka: true
     
